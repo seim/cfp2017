@@ -1,0 +1,10 @@
+## Call for papers SEIM'17
+
+
+
+```
+grunt dist
+# remove livereload.js from html/index.html and html/en.html
+```
+
+# TODO: Explore yeoman ecosystem next time

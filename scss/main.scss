@@ -1,0 +1,263 @@
+// Core variables and mixins
+@import "../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/variables";
+@import "../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/mixins";
+
+// Reset and dependencies
+@import "../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/normalize";
+
+@import "../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/grid";
+@import "../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/scaffolding";
+
+
+@import "../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/type";
+@import "../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/buttons";
+
+
+// Utility classes
+@import "../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/media";
+@import "../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/utilities";
+@import "../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/responsive-utilities";
+
+@import "variables";
+@import "header";
+@import "icons";
+@import "footer";
+
+
+@mixin main-font() {
+    font-family: $font-family-base;
+    font-size: 2rem;
+    line-height: 4rem;
+}
+
+html, body {
+    height: 100%
+}
+
+@media (max-width: $screen-xs) {
+    html {
+        font-size: 9px;
+    }
+}
+
+h2 {
+    &.title {
+        color: #000;
+        font-size: 3.6rem;
+        font-weight: bold;
+        line-height: 4rem;
+        text-align: center;
+        margin: 0 0 3rem 0;
+
+        div {
+            font-size: 2rem;
+            color: $color-gray;
+            font-weight: normal;
+        }
+    }
+}
+
+p {
+    a {
+        text-decoration: underline;
+    }
+}
+
+
+.__block {
+    margin-top: $block-space;
+    margin-bottom: $block-space;
+}
+
+@media (max-width: 767px) {
+    .__block {
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+    }
+}
+
+// Blocks
+.about {
+    @extend .col-xs-10;
+    @extend .col-xs-offset-1;
+    @include main-font();
+}
+
+.themes {
+    margin-bottom: 8rem;
+
+    ul {
+        list-style-image: url("../img/arrow.png");
+
+        li {
+            font-size: 2rem;
+            padding:2rem 1rem 0;
+        }
+    }
+
+}
+
+.dates {
+    background: #e9f6ff;
+    padding: 5.4rem 0;
+    //margin-bottom: $block-space;
+
+    .row {
+        @extend .col-xs-8;
+        @extend .col-xs-offset-2;
+    }
+
+    .dates-list {
+        margin: 3rem 0 0;
+        padding: 0;
+        list-style: none;
+
+        li {
+            margin: 0;
+            padding: 0;
+            font-size: 1.8rem;
+            height: 9rem;
+            position: relative;
+
+            .date {
+                text-align: center;
+                height: 9rem;
+                font-size: 3.5rem;
+                font-weight: bold;
+                line-height: 1;
+                float: left;
+                padding: 2rem 4rem 0 4rem;
+
+                .month {
+                   font-size: 1.8rem;
+                    font-weight: normal;
+                }
+            }
+
+            .name {
+                display: table-cell;
+                height: 9rem;
+                vertical-align: middle ;
+
+            }
+
+            &.apocalypse {
+                background: #fff;
+
+                &:before, &:after {
+                    width:110px;
+                    content: "";
+                    height: 100%;
+                    display: block;
+                    background: url("../img/apocalypse_date.png") left top no-repeat;
+                    position:absolute;
+                    left:-110px;
+                }
+
+                &:after {
+                    background: url("../img/apocalypse_date.png") right bottom no-repeat;
+                    left: 100%;
+                    top: 0;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .dates {
+        .dates-list {
+            li {
+                height: auto;
+                margin-bottom: 1rem;
+                .date {
+                    float: none;
+                }
+                .name {
+                    text-align: center;
+                    display:block;
+                    padding: 0 2rem 2rem 2rem;
+                    height: auto;
+                }
+                &.apocalypse {
+                    &:before, &:after {
+                        display:none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.articles {
+    @extend .col-xs-10;
+    @extend .col-xs-offset-1;
+    @include main-font();
+
+    p {
+        margin-bottom: 3rem;
+    }
+
+    .submit {
+        text-align: center;
+    }
+
+    .btn {
+        @include button-variant(#fff, $main-color, $main-color);
+        padding: 1.5rem 4rem;
+        border-radius: 1000px;
+    }
+}
+
+.review {
+    @extend .col-xs-10;
+    @extend .col-xs-offset-1;
+    @include main-font();
+}
+
+.organizers {
+    .row {
+        margin-top: 3rem;
+    }
+    .media {
+        margin-bottom: 2rem;
+    }
+    .media-left {
+        padding-right: 3rem;
+    }
+    .media-heading {
+        font-size: 2rem;
+        margin-bottom: 1.4rem;
+        color: #000;
+    }
+    .media-body {
+        color: $color-gray;
+        line-height: 3rem;
+        font-size: 1.8rem;
+    }
+
+    .__orgs {
+        text-align: center;
+        img {
+            margin: 0 0 3rem;
+            max-height: 110px;
+            max-width: 300px;
+        }
+        .spbstu {
+
+        }
+    }
+}
+
+@media (max-width: $screen-md) {
+    .organizers {
+        .__orgs {
+            text-align: left;
+            a {
+                img {
+                    max-height: inherit!important;
+                }
+            }
+        }
+    }
+}

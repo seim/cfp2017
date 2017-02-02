@@ -1,0 +1,37 @@
+footer {
+    margin: 6rem 0 0;
+    background: $main-color url("../img/bg.png") left 2rem;
+    overflow: hidden;
+    text-align: center;
+
+    a {
+        color: #fff;
+        font-size: 3.6rem;
+        font-weight: bold;
+        text-decoration: underline;
+        display: inline-block;
+        margin: 10rem auto;
+
+        &:hover, &:focus {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        &:before {
+            content:"";
+            display: block;
+            width: 52px;
+            margin: 0 auto 2rem auto;
+            height: 34px;
+            background: url("../img/icons/envelope.png") center center no-repeat;
+        }
+    }
+}
+
+@media (max-width: $screen-xs) {
+    footer {
+        a {
+            font-size: 2.4rem;
+        }
+    }
+}

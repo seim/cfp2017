@@ -1,0 +1,58 @@
+h2 {
+    &.icon {
+        &:before {
+            content: "";
+            width: 48px;
+            height: 48px;
+            display: block;
+            margin: 0 auto 20px auto;
+        }
+
+        &.__theme {
+            &:before {
+                background: url("../img/icons/theme.png") center center no-repeat;
+            }
+        }
+
+        &.__calendar {
+            &:before {
+                background: url("../img/icons/calendar.png") center center no-repeat;
+            }
+        }
+
+        &.__case {
+            &:before {
+                width: 54px;
+                background: url("../img/icons/case.png") center center no-repeat;
+            }
+        }
+
+        &.__collection {
+            &:before {
+                width: 60px;
+                background: url("../img/icons/collection.png") center center no-repeat;
+            }
+        }
+
+        &.__pdf {
+            &:before {
+                width: 43px;
+                background: url("../img/icons/pdf.png") center center no-repeat;
+            }
+        }
+
+        &.__people {
+            &:before {
+                width: 64px;
+                background: url("../img/icons/people.png") center center no-repeat;
+            }
+        }
+
+        &.__star {
+            &:before {
+                width: 48px;
+                background: url("../img/icons/star.png") center center no-repeat;
+            }
+        }
+    }
+}

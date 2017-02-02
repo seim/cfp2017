@@ -1,0 +1,7 @@
+# Mac specific files
+.DS_Store
+._*
+
+node_modules/
+.idea/
+html/css/
