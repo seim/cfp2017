@@ -4,4 +4,4 @@
 
 node_modules/
 .idea/
-html/css/
+html/css/*.min.css
