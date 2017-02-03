@@ -14,7 +14,8 @@
     "grunt-contrib-connect": "^1.0.2",
     "grunt-contrib-cssmin": "^1.0.2",
     "grunt-data-uri": "^0.3.0",
-    "grunt-dom-munger": "^3.4.0"
+    "grunt-dom-munger": "^3.4.0",
+    "grunt-strip-code": "^1.0.4"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

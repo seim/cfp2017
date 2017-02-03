@@ -4,7 +4,7 @@ module.exports = function (grunt) {
         sass: {
             dist: {
                 files: {
-                    'html/css/main.css': 'scss/main.scss'
+                    'app/css/main.css': 'scss/main.scss'
                 }
             }
         },
@@ -17,7 +17,7 @@ module.exports = function (grunt) {
                 },
             },
             html: {
-                files: ['html/index.html'],
+                files: ['app/index.html'],
                 options: {
                     livereload: true
                 }
@@ -25,8 +25,8 @@ module.exports = function (grunt) {
         },
         dataUri: {
             dist: {
-                src: ['html/css/main.css'],
-                dest: 'html/css/',
+                src: ['dist/css/main.css'],
+                dest: 'dist/css/',
                 options: {
                     target: ['html/img/icons/*.*', 'html/img/arrow.png'],
                     fixDirLevel: true,
@@ -39,25 +39,36 @@ module.exports = function (grunt) {
             target: {
                 files: [{
                     expand: true,
-                    cwd: 'html/css',
+                    cwd: 'dist/css',
+                    dest: 'dist/css',
                     src: ['*.css', '!*.min.css'],
-                    dest: 'html/css',
-                    ext: '.min.css'
+                    ext: '.css'
                 }]
             }
         },
-        // TODO: specify `dist` dir for output and enable task below.
-        // update: {
-        //     options: {
-        //         remove: ['script[data-autoremove="true"]']
-        //     }
-        // }
+        strip_code: {
+            options: {
+                blocks: [
+                    {
+                        start_block: "/* start-test-block */",
+                        end_block: "/* end-test-block */"
+                    },
+                    {
+                        start_block: "<!-- start-html-test-code -->",
+                        end_block: "<!-- end-html-test-code -->"
+                    }
+                ]
+            },
+            html: {
+                src: ['dist/*.html']
+            }
+        }
     });
     grunt.loadNpmTasks('grunt-sass');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-data-uri');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
-    grunt.loadNpmTasks('grunt-dom-munger');
+    grunt.loadNpmTasks('grunt-strip-code');
     grunt.registerTask('default', ['watch']);
-    grunt.registerTask('dist', ['dataUri', 'cssmin']);
+    grunt.registerTask('dist', ['dataUri', 'cssmin', 'strip_code']);
 };

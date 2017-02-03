@@ -7,4 +7,4 @@ node_modules/
 html/css/*.min.css
 
 dist/*
-!dist/.gitkeep
+!dist/.gitignore
