@@ -46,6 +46,7 @@ h2 {
         font-size: 3.6rem;
         font-weight: bold;
         line-height: 4rem;
+        font-family: $font-family-base;
         text-align: center;
         margin: 0 0 3rem 0;
 
@@ -206,6 +207,7 @@ p {
         @include button-variant(#fff, $main-color, $main-color);
         padding: 1.5rem 4rem;
         border-radius: 1000px;
+        font-size: 2rem;
     }
 }
 

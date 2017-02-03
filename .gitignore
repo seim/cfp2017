@@ -5,3 +5,6 @@
 node_modules/
 .idea/
 html/css/*.min.css
+
+dist/*
+!dist/.gitkeep
