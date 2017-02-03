@@ -28,7 +28,7 @@ module.exports = function (grunt) {
                 src: ['dist/css/main.css'],
                 dest: 'dist/css/',
                 options: {
-                    target: ['html/img/icons/*.*', 'html/img/arrow.png'],
+                    target: ['dist/img/icons/*.*', 'dist/img/arrow.png'],
                     fixDirLevel: true,
                     maxBytes: 2048
 

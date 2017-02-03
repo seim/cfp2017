@@ -3,7 +3,9 @@
 Project structure:
 
 app/  # project sources, except css/ directory. Css sources stored in scss/
+
 dist/  # Output files, which will be synced with `gh-pages` branch. **Don't change them by hand or you can lose data!**
+
 scss/  # css sources
 
 
