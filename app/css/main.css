@@ -1985,7 +1985,7 @@ p a {
   text-align: center; }
   .organizers .__orgs img {
     margin: 0 0 3rem;
-    max-height: 110px;
+    min-height: 106px;
     max-width: 300px; }
 
 @media (max-width: 1004px) {
