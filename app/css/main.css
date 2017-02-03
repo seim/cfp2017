@@ -1892,6 +1892,8 @@ p a {
           background: url("../img/apocalypse_date.png") right bottom no-repeat;
           left: 100%;
           top: 0; }
+        .dates .dates-list li.apocalypse a {
+          display: block; }
 
 @media (max-width: 480px) {
   .dates .dates-list li {
