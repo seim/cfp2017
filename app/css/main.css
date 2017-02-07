@@ -1985,8 +1985,8 @@ p a {
   text-align: center; }
   .organizers .__orgs img {
     margin: 0 0 3rem;
-    min-height: 106px;
-    max-width: 300px; }
+    min-height: 100px;
+    max-width: 320px; }
 
 @media (max-width: 1004px) {
   .organizers .__orgs {
