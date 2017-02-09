@@ -1844,11 +1844,14 @@ p a {
 
 .themes {
   margin-bottom: 0; }
-  .themes ul {
-    list-style-image: url("../img/arrow.png"); }
-    .themes ul li {
-      font-size: 2rem;
-      padding: 2rem 1rem 0; }
+
+ul.arrowed {
+  list-style-image: url("../img/arrow.png"); }
+  ul.arrowed li {
+    font-size: 2rem;
+    padding: 2rem 1rem 0; }
+    ul.arrowed li span {
+      color: #989898; }
 
 .dates {
   background: #e9f6ff;

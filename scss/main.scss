@@ -87,15 +87,19 @@ p {
 .themes {
     margin-bottom: 0;
 
-    ul {
-        list-style-image: url("../img/arrow.png");
+}
 
-        li {
-            font-size: 2rem;
-            padding:2rem 1rem 0;
+ul.arrowed {
+    list-style-image: url("../img/arrow.png");
+
+    li {
+        font-size: 2rem;
+        padding:2rem 1rem 0;
+
+        span {
+            color: $color-gray;
         }
     }
-
 }
 
 .dates {
