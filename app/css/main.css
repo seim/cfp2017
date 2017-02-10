@@ -1850,8 +1850,9 @@ ul.arrowed {
   ul.arrowed li {
     font-size: 2rem;
     padding: 2rem 1rem 0; }
-    ul.arrowed li span {
-      color: #989898; }
+    ul.arrowed li div {
+      color: #989898;
+      font-size: 1.4rem; }
 
 .dates {
   background: #e9f6ff;
