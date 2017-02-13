@@ -1847,7 +1847,8 @@ p a {
 
 ul.arrowed {
   list-style-image: url("../img/arrow.png");
-  padding-left: 4rem; }
+  padding-left: 4rem;
+  margin: 0; }
   ul.arrowed li {
     font-size: 2rem;
     padding: 2rem 1rem 0; }
