@@ -233,9 +233,7 @@ ul.arrowed {
 }
 
 
-.committee {
-    margin-bottom: 0;
-}
+
 .__orgs {
     img {
         height: 130px;
@@ -258,11 +256,17 @@ ul.arrowed {
         font-size: 1.8rem;
     }
 }
+@media (max-width: $screen-md) {
+    .__orgs {
+        .media-left {
+            float: left;
+        }
+    }
+}
 
 
 
 .organizers {
-    margin-top: 4rem;
 
     .col-md-6 {
         padding-left: 65px;

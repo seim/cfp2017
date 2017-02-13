@@ -1779,7 +1779,7 @@ h2.icon.__star:before {
   background: url("../img/icons/star.png") center center no-repeat; }
 
 footer {
-  margin: 6rem 0 0;
+  margin: 3rem 0 0;
   background: #3366ff url("../img/bg.png") left 2rem;
   overflow: hidden;
   text-align: center; }
@@ -1970,9 +1970,6 @@ ul.arrowed {
   font-size: 2rem;
   line-height: 4rem; }
 
-.committee {
-  margin-bottom: 0; }
-
 .__orgs img {
   height: 130px; }
 
@@ -1992,13 +1989,15 @@ ul.arrowed {
   line-height: 2.6rem;
   font-size: 1.8rem; }
 
-.organizers {
-  margin-top: 4rem; }
-  .organizers .col-md-6 {
-    padding-left: 65px; }
-    .organizers .col-md-6 img {
-      height: 120px;
-      margin-bottom: 2rem; }
+@media (max-width: 1004px) {
+  .__orgs .media-left {
+    float: left; } }
+
+.organizers .col-md-6 {
+  padding-left: 65px; }
+  .organizers .col-md-6 img {
+    height: 120px;
+    margin-bottom: 2rem; }
 
 @media (max-width: 1004px) {
   .organizers .col-md-6 {
