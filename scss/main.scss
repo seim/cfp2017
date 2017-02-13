@@ -91,10 +91,15 @@ p {
 
 ul.arrowed {
     list-style-image: url("../img/arrow.png");
+    padding-left: 4rem;
 
     li {
         font-size: 2rem;
         padding:2rem 1rem 0;
+
+        span {
+            color: $color-gray;
+        }
 
         div {
             color: $color-gray;
@@ -220,55 +225,60 @@ ul.arrowed {
     }
 }
 
-.review {
+.review, .proceedings {
     @extend .col-xs-10;
     @extend .col-xs-offset-1;
     @include main-font();
 }
 
-.organizers {
-    .row {
-        margin-top: 3rem;
+
+.committee {
+    margin-bottom: 0;
+}
+.__orgs {
+    img {
+        height: 130px;
     }
+
     .media {
-        margin-bottom: 2rem;
+        margin: 1rem 0 2rem 4rem;
     }
     .media-left {
         padding-right: 3rem;
     }
     .media-heading {
         font-size: 2rem;
-        margin: 2rem 0 1.4rem;
+        margin: 1rem 0 1.4rem;
         color: #000;
     }
     .media-body {
         color: $color-gray;
-        line-height: 3rem;
+        line-height: 2.6rem;
         font-size: 1.8rem;
-    }
-
-    .__orgs {
-        text-align: center;
-        img {
-            margin: 0 0 3rem;
-            min-height: 100px;
-            max-width: 320px;
-        }
-        .spbstu {
-
-        }
     }
 }
 
 @media (max-width: $screen-md) {
-    .organizers {
-        .__orgs {
-            text-align: left;
-            a {
-                img {
-                    max-height: inherit!important;
-                }
+    .__orgs {
+        a {
+            img {
+                max-height: inherit!important;
             }
         }
     }
+}
+
+
+.organizers {
+    margin-top: 4rem;
+
+    .col-md-6 {
+        padding-left: 65px;
+
+        img {
+            height: 120px;
+            margin-bottom: 2rem;
+        }
+    }
+
 }

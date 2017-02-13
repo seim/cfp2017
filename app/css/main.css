@@ -216,13 +216,13 @@ th {
   .row:after {
     clear: both; }
 
-.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .dates .row, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .about, .articles, .review, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .dates .row, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .about, .articles, .review, .proceedings, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
   position: relative;
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px; }
 
-.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .dates .row, .col-xs-9, .col-xs-10, .about, .articles, .review, .col-xs-11, .col-xs-12 {
+.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .dates .row, .col-xs-9, .col-xs-10, .about, .articles, .review, .proceedings, .col-xs-11, .col-xs-12 {
   float: left; }
 
 .col-xs-1 {
@@ -252,7 +252,7 @@ th {
 .col-xs-9 {
   width: 75%; }
 
-.col-xs-10, .about, .articles, .review {
+.col-xs-10, .about, .articles, .review, .proceedings {
   width: 83.3333333333%; }
 
 .col-xs-11 {
@@ -342,7 +342,7 @@ th {
 .col-xs-offset-0 {
   margin-left: 0%; }
 
-.col-xs-offset-1, .about, .articles, .review {
+.col-xs-offset-1, .about, .articles, .review, .proceedings {
   margin-left: 8.3333333333%; }
 
 .col-xs-offset-2, .dates .row {
@@ -1829,8 +1829,8 @@ p a {
   text-decoration: underline; }
 
 .__block {
-  margin-top: 15rem;
-  margin-bottom: 15rem; }
+  margin-top: 12rem;
+  margin-bottom: 12rem; }
 
 @media (max-width: 767px) {
   .__block {
@@ -1846,10 +1846,13 @@ p a {
   margin-bottom: 0; }
 
 ul.arrowed {
-  list-style-image: url("../img/arrow.png"); }
+  list-style-image: url("../img/arrow.png");
+  padding-left: 4rem; }
   ul.arrowed li {
     font-size: 2rem;
     padding: 2rem 1rem 0; }
+    ul.arrowed li span {
+      color: #989898; }
     ul.arrowed li div {
       color: #989898;
       font-size: 1.4rem; }
@@ -1961,39 +1964,41 @@ ul.arrowed {
       color: #3366ff;
       background-color: #fff; }
 
-.review {
+.review, .proceedings {
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
   font-size: 2rem;
   line-height: 4rem; }
 
-.organizers .row {
-  margin-top: 3rem; }
+.committee {
+  margin-bottom: 0; }
 
-.organizers .media {
-  margin-bottom: 2rem; }
+.__orgs img {
+  height: 130px; }
 
-.organizers .media-left {
+.__orgs .media {
+  margin: 1rem 0 2rem 4rem; }
+
+.__orgs .media-left {
   padding-right: 3rem; }
 
-.organizers .media-heading {
+.__orgs .media-heading {
   font-size: 2rem;
-  margin: 2rem 0 1.4rem;
+  margin: 1rem 0 1.4rem;
   color: #000; }
 
-.organizers .media-body {
+.__orgs .media-body {
   color: #989898;
-  line-height: 3rem;
+  line-height: 2.6rem;
   font-size: 1.8rem; }
 
-.organizers .__orgs {
-  text-align: center; }
-  .organizers .__orgs img {
-    margin: 0 0 3rem;
-    min-height: 100px;
-    max-width: 320px; }
-
 @media (max-width: 1004px) {
-  .organizers .__orgs {
-    text-align: left; }
-    .organizers .__orgs a img {
-      max-height: inherit !important; } }
+  .__orgs a img {
+    max-height: inherit !important; } }
+
+.organizers {
+  margin-top: 4rem; }
+  .organizers .col-md-6 {
+    padding-left: 65px; }
+    .organizers .col-md-6 img {
+      height: 120px;
+      margin-bottom: 2rem; }
