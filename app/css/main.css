@@ -2001,7 +2001,9 @@ ul.arrowed {
       margin-bottom: 2rem; }
 
 @media (max-width: 1004px) {
-  .organizers .col-md-6 img {
-    height: auto;
-    max-width: 240px;
-    margin-bottom: 4rem; } }
+  .organizers .col-md-6 {
+    padding-left: 35px; }
+    .organizers .col-md-6 img {
+      height: auto;
+      max-width: 240px;
+      margin-bottom: 4rem; } }

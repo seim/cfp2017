@@ -277,6 +277,8 @@ ul.arrowed {
 @media (max-width: $screen-md) {
     .organizers {
         .col-md-6 {
+            padding-left: 35px;
+
             img {
                 height: auto;
                 max-width: 240px;
