@@ -259,15 +259,6 @@ ul.arrowed {
     }
 }
 
-@media (max-width: $screen-md) {
-    .__orgs {
-        a {
-            img {
-                max-height: inherit!important;
-            }
-        }
-    }
-}
 
 
 .organizers {
@@ -281,5 +272,16 @@ ul.arrowed {
             margin-bottom: 2rem;
         }
     }
+}
 
+@media (max-width: $screen-md) {
+    .organizers {
+        .col-md-6 {
+            img {
+                height: auto;
+                max-width: 240px;
+                margin-bottom: 4rem;
+            }
+        }
+    }
 }

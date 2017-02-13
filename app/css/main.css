@@ -1992,10 +1992,6 @@ ul.arrowed {
   line-height: 2.6rem;
   font-size: 1.8rem; }
 
-@media (max-width: 1004px) {
-  .__orgs a img {
-    max-height: inherit !important; } }
-
 .organizers {
   margin-top: 4rem; }
   .organizers .col-md-6 {
@@ -2003,3 +1999,9 @@ ul.arrowed {
     .organizers .col-md-6 img {
       height: 120px;
       margin-bottom: 2rem; }
+
+@media (max-width: 1004px) {
+  .organizers .col-md-6 img {
+    height: auto;
+    max-width: 240px;
+    margin-bottom: 4rem; } }
