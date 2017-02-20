@@ -6,24 +6,23 @@ footer {
 
     a {
         color: #fff;
-        font-size: 3.6rem;
+        font-size: 2.6rem;
         font-weight: bold;
         text-decoration: underline;
         display: inline-block;
-        margin: 10rem auto;
+        margin: 1rem auto 5rem auto;
 
         &:hover, &:focus {
             color: #fff;
             text-decoration: none;
         }
 
-        &:before {
-            content:"";
-            display: block;
-            width: 52px;
-            margin: 0 auto 2rem auto;
-            height: 34px;
-            background: url("../img/icons/envelope.png") center center no-repeat;
+        &.__envelope {
+            margin: 5rem auto 0;
+            font-size: 2rem;
+            &:before {
+                margin-bottom: 1rem;
+            }
         }
     }
 }

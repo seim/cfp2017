@@ -1745,38 +1745,43 @@ input[type="button"].btn-block {
   .section-header {
     margin: 1.5rem 0 3rem 0; } }
 
-h2.icon:before {
+*.icon:before {
   content: "";
   width: 48px;
   height: 48px;
   display: block;
   margin: 0 auto 20px auto; }
 
-h2.icon.__theme:before {
+*.icon.__theme:before {
   background: url("../img/icons/theme.png") center center no-repeat; }
 
-h2.icon.__calendar:before {
+*.icon.__calendar:before {
   background: url("../img/icons/calendar.png") center center no-repeat; }
 
-h2.icon.__case:before {
+*.icon.__case:before {
   width: 54px;
   background: url("../img/icons/case.png") center center no-repeat; }
 
-h2.icon.__collection:before {
+*.icon.__collection:before {
   width: 60px;
   background: url("../img/icons/collection.png") center center no-repeat; }
 
-h2.icon.__pdf:before {
+*.icon.__pdf:before {
   width: 43px;
   background: url("../img/icons/pdf.png") center center no-repeat; }
 
-h2.icon.__people:before {
+*.icon.__people:before {
   width: 64px;
   background: url("../img/icons/people.png") center center no-repeat; }
 
-h2.icon.__star:before {
+*.icon.__star:before {
   width: 48px;
   background: url("../img/icons/star.png") center center no-repeat; }
+
+*.icon.__envelope:before {
+  width: 52px;
+  height: 34px;
+  background: url("../img/icons/envelope.png") center center no-repeat; }
 
 footer {
   margin: 3rem 0 0;
@@ -1785,21 +1790,19 @@ footer {
   text-align: center; }
   footer a {
     color: #fff;
-    font-size: 3.6rem;
+    font-size: 2.6rem;
     font-weight: bold;
     text-decoration: underline;
     display: inline-block;
-    margin: 10rem auto; }
+    margin: 1rem auto 5rem auto; }
     footer a:hover, footer a:focus {
       color: #fff;
       text-decoration: none; }
-    footer a:before {
-      content: "";
-      display: block;
-      width: 52px;
-      margin: 0 auto 2rem auto;
-      height: 34px;
-      background: url("../img/icons/envelope.png") center center no-repeat; }
+    footer a.__envelope {
+      margin: 5rem auto 0;
+      font-size: 2rem; }
+      footer a.__envelope:before {
+        margin-bottom: 1rem; }
 
 @media (max-width: 480px) {
   footer a {

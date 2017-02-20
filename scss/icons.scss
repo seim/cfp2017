@@ -1,4 +1,4 @@
-h2 {
+* {
     &.icon {
         &:before {
             content: "";
@@ -52,6 +52,14 @@ h2 {
             &:before {
                 width: 48px;
                 background: url("../img/icons/star.png") center center no-repeat;
+            }
+        }
+
+        &.__envelope {
+            &:before {
+                width: 52px;
+                height: 34px;
+                background: url("../img/icons/envelope.png") center center no-repeat;
             }
         }
     }
